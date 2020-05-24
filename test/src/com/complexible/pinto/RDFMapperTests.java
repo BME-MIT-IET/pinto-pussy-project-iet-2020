@@ -755,7 +755,7 @@ public class RDFMapperTests {
 		                              .writeValue(aObj);
 
 		assertTrue(Models.isomorphic(aGraph,
-		                            ModelIO.read(Files3.classPath("/data/map.nt").toPath())));
+		(Model)ModelIO.read(Files3.classPath("/data/map.nt").toPath())));
 	}
 
 	@Test
