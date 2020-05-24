@@ -1412,7 +1412,7 @@ public class RDFMapperTests {
 	public static class ClassWithPrimitives implements Identifiable {
 		private String mString;
 		private int mInt;
-		private URI mURI;
+		private java.net.URI mURI;
 		private float mFloat;
 		private double mDouble;
 		private char mChar;
