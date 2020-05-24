@@ -79,7 +79,7 @@ public class RDFMapperTests {
 		ClassWithPrimitives aObj = new ClassWithPrimitives();
 		aObj.setString("str value");
 		aObj.setInt(8);
-		aObj.setURI(java.net.URI.create("urn:any"));
+		aObj.setURI(URI.create("urn:any"));
 		aObj.setFloat(4.5f);
 		aObj.setDouble(20.22);
 		aObj.setChar('o');
@@ -103,7 +103,7 @@ public class RDFMapperTests {
 		ClassWithPrimitives aExpected = new ClassWithPrimitives();
 		aExpected.setString("str value");
 		aExpected.setInt(8);
-		aExpected.setURI(java.net.URI.create("urn:any"));
+		aExpected.setURI(URI.create("urn:any"));
 		aExpected.setFloat(4.5f);
 		aExpected.setDouble(20.22);
 		aExpected.setChar('o');
@@ -116,7 +116,7 @@ public class RDFMapperTests {
 		ClassWithPrimitives aChild = new ClassWithPrimitives();
 		aChild.setString("str value");
 		aChild.setInt(8);
-		aChild.setURI(java.net.URI.create("urn:any"));
+		aChild.setURI(URI.create("urn:any"));
 		aChild.setFloat(4.5f);
 		aChild.setDouble(20.22);
 		aChild.setChar('o');
@@ -1412,7 +1412,7 @@ public class RDFMapperTests {
 	public static class ClassWithPrimitives implements Identifiable {
 		private String mString;
 		private int mInt;
-		private java.net.URI mURI;
+		private URI mURI;
 		private float mFloat;
 		private double mDouble;
 		private char mChar;
