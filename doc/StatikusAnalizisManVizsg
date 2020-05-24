@@ -1,0 +1,22 @@
+#Statikus analízis Codacy-vel, manuális kódátnézés
+
+##Codacy
+A Codacy webes felülete segítségével statikus kódanalízist végeztem a projekten, ami java és markup hibákat
+tárt fel. Be lehetett kötni rá a projektet, így mikor commit történik valamilyen branchen a kódban, értesít róla
+A többiek munkája során tapasztalt problémák így rögtön kiderültek, egyszerű volt javítani.
+Csak kódolástechnikai hibákat detektált. Ezek egy jó része abból származott, hogy a java nyelv kódstílusától eltértek az osztály nevek, 
+változó deklalárási pozíciók. Ez származhat pusztán abból, hogy a fejlesztőcsapatnak ezek a standard elvárásai, ezért ezek nem tekinthatők valós 
+problémának. Felesleges specifikációk voltak, ezeket javítottam is. Gyakori még, hogy teszteknek nem volt belsejük, de
+itt jelezve volt, hogy csak teszthez vannak, a @ignore kulcsszóval. Ezt jó lenne mondjuk, ha felismerné a Codacy.
+Markdown-hoz kötődőek könnyen javíthatóak voltak. A leglényegesebb probléma ,amit talált az egy túl nagy osztály
+, ami tekinthető God Class codesmellnek. Ennek az osztálynak, és egyes metódusainak a komplexitása nagyon magas volt.
+Ugyanakkor talált olyan hibákat is, amik nem állatak fent (NPath komplexitás pl). Ami jól jönne benne, hogy az @ignore-
+ felismerje, saját kódstílust lehessen beállítani rajta.
+##Manuálisan
+A Github webes felületének segítségével történt. Könnyű volt megtalálni őket, a Codacy segítségével, hiszen jelezte a 
+ sor számot, és a fájlt. itt megvizsgálva a fájlt láttam, hogy az NPath probléma nem áll fent. A javítások is a webes felületen történtek.
+
+##Eredmény
+A Codacy által A-s értékeles
+
+ 
