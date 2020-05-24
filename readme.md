@@ -136,18 +136,18 @@ public enum TestEnum {
 By default, `RDFMapper` does not require any configuration, it's meant to generate reasonable RDF out of the box.  There
 are a couple (de)serialization options which are specified by `MappingOptions`:
 
-* `REQUIRE_IDS` - By default, Pinto will auto-generate URIs for objects when `@RdfId` is not specified.  By setting this property to `true` the mapper will not auto-generate URIs, they must be specified explicitly. (default: `false`)
-* `SERIALIZE_COLLECTIONS_AS_LISTS` - When true, collections are serialized as RDF lists.  Otherwise, they're serialized using `Collection#size` separate property assertions. (default: `false`)
-* `IGNORE_INVALID_ANNOTATIONS` - Whether or not to ignore an annotation which is invalid, such as `@RdfProperty` which defines a property with an invalid URI.  Properties with invalid/ignored annotations are simply not used when generating a Bean or RDF. (default: `true`)
+*   `REQUIRE_IDS` - By default, Pinto will auto-generate URIs for objects when `@RdfId` is not specified.  By setting this property to `true` the mapper will not auto-generate URIs, they must be specified explicitly. (default: `false`)
+*   `SERIALIZE_COLLECTIONS_AS_LISTS` - When true, collections are serialized as RDF lists.  Otherwise, they're serialized using `Collection#size` separate property assertions. (default: `false`)
+*   `IGNORE_INVALID_ANNOTATIONS` - Whether or not to ignore an annotation which is invalid, such as `@RdfProperty` which defines a property with an invalid URI.  Properties with invalid/ignored annotations are simply not used when generating a Bean or RDF. (default: `true`)
 
 Beyond these configuration options, `RDFMapper` has a few other configuration mechanisms that can be specified on its
 `Builder` when creating the mapper:
 
-* `#map(URI, Class)` - Specify the provided type corresponds to instances of the given Java class.  Functions like the `@RdfsClass` annotation.
-* `#namespace(...)` - Methods to specify namespace mappings which are used to expand any QNames used in the annotations
-* `#valueFactory(ValueFactory)` - Provide the `ValueFactory` to be used when creating RDF from a bean
-* `#collectionFactory(CollectionFactory)` - The factory to be used for creating instances of `java.util.Collection`.  Defaults to `DefaultCollectionFactory`
-* `#mapFactory(MapFactory)` - The factory to be used for creating instances of `java.util.Map`.  Defaults to `DefaultMapFactory`
+*   `#map(URI, Class)` - Specify the provided type corresponds to instances of the given Java class.  Functions like the `@RdfsClass` annotation.
+*   `#namespace(...)` - Methods to specify namespace mappings which are used to expand any QNames used in the annotations
+*   `#valueFactory(ValueFactory)` - Provide the `ValueFactory` to be used when creating RDF from a bean
+*   `#collectionFactory(CollectionFactory)` - The factory to be used for creating instances of `java.util.Collection`.  Defaults to `DefaultCollectionFactory`
+*   `#mapFactory(MapFactory)` - The factory to be used for creating instances of `java.util.Map`.  Defaults to `DefaultMapFactory`
 
 ## Custom serialization
 
