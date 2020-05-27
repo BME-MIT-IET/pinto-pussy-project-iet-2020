@@ -9,4 +9,9 @@ A projekt célja egy olyan library biztosítása java-hoz, amely szerializálja 
 ## Feladatok
 
 Statikus analízis és manuális vizsgálat (Kovács Milán)
-Egységtesztek készítése és kódlefedettség mérése (Cseresznyés Balázs)
+
+Nem-funkcionális jellemzők vizsgálata (Nagy Kevin)
+
+BDD tesztek készítése (Szabó Csongor)
+
+Egységtesztek készítése/kiegészítése + tesztek kódlefedettségének mérése és ez alapján tesztkészlet bővítése (Cseresznyés Balázs)
