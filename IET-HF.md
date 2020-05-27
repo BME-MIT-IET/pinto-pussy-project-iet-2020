@@ -9,3 +9,4 @@ A projekt célja egy olyan library biztosítása java-hoz, amely szerializálja 
 ## Feladatok
 
 Statikus analízis és manuális vizsgálat (Kovács Milán)
+Egységtesztek készítése és kódlefedettség mérése (Cseresznyés Balázs)
